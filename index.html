@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="background-container">
+      <div id="sky"></div>
+      <div id="bg"></div>
+      <div>
+        <img
+          src="/assets/images/logo.png"
+          alt="logo"
+          id="logo"
+          loading="lazy"
+        />
+      </div>
+      <div class="card">
+        <h2>Login as a Admin User</h2>
+        <form onsubmit="handleLogin(); return false;">
+          <label for="email" id="label_email">Register Number/ Email ID</label>
+          <input type="email" id="email" name="email" required />
+          <p id="email_error" class="error"></p>
+          <label for="email" id="label_password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <p id="password_error" class="error"></p>
+          <button id="login_button" type="submit" >Login</button>
+        </form>
+        <p id="forget-password">Forget password?</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
